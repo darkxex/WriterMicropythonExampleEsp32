@@ -5,7 +5,6 @@ from writer import Writer
 
 # Font
 import arial20esp as arial20
-ssd.fill(0)
 wri = Writer(ssd, arial20, False)
 wri.set_clip(False, False, False)
 Writer.set_textpos(ssd, 0, 0)  # verbose = False to suppress console output
