@@ -35,11 +35,12 @@ from ssd1306_setup import ssd
 from writer import Writer
 
 # Font
-import freesans20
+import arial20esp as arial20
 
-wri = Writer(ssd, freesans20)
+wri = Writer(ssd, arial20)
+wri.set_clip(False, False, False)
 Writer.set_textpos(ssd, 0, 0)  # verbose = False to suppress console output
-wri.printstring('Sunday\n')
-wri.printstring('12 Aug 2018\n')
+wri.printstring('Sábado\n')
+wri.printstring('12 Aug 2019\n')
 wri.printstring('10.30am')
 ssd.show()
